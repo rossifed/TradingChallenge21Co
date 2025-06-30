@@ -1,0 +1,8 @@
+{
+  "statetracking": {
+    "module": {
+      "name": "StateTracking",
+      "enabled": true
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "marketdata": {
+    "module": {
+      "name": "MarketData",
+      "enabled": true
+    }
+  }
+}

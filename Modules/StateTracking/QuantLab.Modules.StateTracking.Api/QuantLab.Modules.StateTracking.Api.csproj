@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="9.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\QuantLab.Shared.Abstractions\QuantLab.Shared.Abstractions.csproj" />
+    <ProjectReference Include="..\QuantLab.Modules.StateTracking.Application\QuantLab.Modules.StateTracking.Application.csproj" />
+    <ProjectReference Include="..\QuantLab.Modules.StateTracking.Domain\QuantLab.Modules.StateTracking.Domain.csproj" />
+    <ProjectReference Include="..\QuantLab.Modules.StateTracking.Infrastructure\QuantLab.Modules.StateTracking.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="module.statetracking.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="module.statetrackingdevelopment.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

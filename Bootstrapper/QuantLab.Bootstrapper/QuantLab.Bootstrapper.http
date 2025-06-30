@@ -1,0 +1,6 @@
+@QuantLab.Bootstrapper_HostAddress = http://localhost:5113
+
+GET {{QuantLab.Bootstrapper_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

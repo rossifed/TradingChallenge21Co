@@ -1,0 +1,8 @@
+{
+  "risk": {
+    "module": {
+      "name": "Risk",
+      "enabled": true
+    }
+  }
+}
